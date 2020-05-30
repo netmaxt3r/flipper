@@ -86,7 +86,7 @@ async function startWatchChanges(
     // no hot reloading for plugins in .flipper folder. This is to prevent
     // Flipper from reloading, while we are doing changes on thirdparty plugins.
     .filter(
-      (plugin) => !plugin.dir.startsWith(path.join(HOME_DIR, '.flipper')),
+      (plugin) => !plugin.dir.startsWith(path.join(HOME_DIR, '.klipper')),
     );
   const watchOptions = Object.assign({}, options, {force: true});
   await startWatchPlugins(filteredPlugins, (plugin) =>

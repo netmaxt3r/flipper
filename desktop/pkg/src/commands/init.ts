@@ -122,7 +122,7 @@ export async function initTemplate(
 }
 
 async function verifyFlipperSearchPath(pluginDirectory: string) {
-  const flipperConfigPath = path.join(homedir(), '.flipper', 'config.json');
+  const flipperConfigPath = path.join(homedir(), '.klipper', 'config.json');
   if (!fs.existsSync(flipperConfigPath)) {
     console.warn(
       `It seems Flipper is not installed on your machine; failed to find ${flipperConfigPath}. Head to 'fbflipper.com' to download flipper`,

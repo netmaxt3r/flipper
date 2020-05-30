@@ -28,7 +28,7 @@ export type Config = {
 
 export default function setup(argv: any) {
   // ensure .flipper folder and config exist
-  const flipperDir = path.join(os.homedir(), '.flipper');
+  const flipperDir = path.join(os.homedir(), '.klipper');
   if (!fs.existsSync(flipperDir)) {
     fs.mkdirSync(flipperDir);
   }

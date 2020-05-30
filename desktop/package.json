@@ -1,8 +1,8 @@
 {
-  "name": "flipper-project",
+  "name": "klipper-project",
   "version": "0.44.1",
   "description": "Mobile development tool",
-  "productName": "Flipper",
+  "productName": "Klipper",
   "author": {
     "name": "Facebook Inc",
     "email": "n/a",
@@ -32,9 +32,9 @@
     ]
   },
   "build": {
-    "appId": "flipper",
-    "productName": "Flipper",
-    "artifactName": "Flipper-${os}.${ext}",
+    "appId": "klipper",
+    "productName": "Klipper",
+    "artifactName": "Klipper-${os}.${ext}",
     "protocols": {
       "name": "flipper",
       "schemes": [

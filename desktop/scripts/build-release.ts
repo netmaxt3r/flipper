@@ -72,7 +72,7 @@ async function buildDist(buildFolder: string) {
       targetsRaw.push(Platform.MAC.createTarget(['dmg']));
     }
     postBuildCallbacks.push(() =>
-      spawn('zip', ['-qyr9', '../Flipper-mac.zip', 'Flipper.app'], {
+      spawn('zip', ['-qyr9', '../Klipper-mac.zip', 'Klipper.app'], {
         cwd: path.join(distDir, 'mac'),
         encoding: 'utf-8',
       }),
@@ -115,7 +115,7 @@ async function buildDist(buildFolder: string) {
       publish: 'never',
       config: {
         appId: `com.facebook.sonar`,
-        productName: 'Flipper',
+        productName: 'Klipper',
         directories: {
           buildResources: buildFolder,
           output: distDir,
@@ -123,7 +123,7 @@ async function buildDist(buildFolder: string) {
         electronDownload: electronDownloadOptions,
         npmRebuild: false,
         linux: {
-          executableName: 'flipper',
+          executableName: 'klipper',
         },
         mac: {
           bundleVersion: '50.0.0',

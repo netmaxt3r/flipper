@@ -17,7 +17,7 @@ export default async function getPluginFolders(
 ) {
   const pluginFolders: string[] = [];
   if (includeThirdparty) {
-    pluginFolders.push(path.join(homedir(), '.flipper', 'thirdparty'));
+    pluginFolders.push(path.join(homedir(), '.klipper', 'thirdparty'));
   }
   if (process.env.FLIPPER_NO_EMBEDDED_PLUGINS === 'true') {
     console.log(
@@ -25,7 +25,7 @@ export default async function getPluginFolders(
     );
     return pluginFolders;
   }
-  const flipperConfigPath = path.join(homedir(), '.flipper', 'config.json');
+  const flipperConfigPath = path.join(homedir(), '.klipper', 'config.json');
   if (await fs.pathExists(flipperConfigPath)) {
     const config = await fs.readJson(flipperConfigPath);
     if (config.pluginPaths) {

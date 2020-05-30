@@ -2,7 +2,7 @@
   "name": "flipper",
   "version": "0.44.1",
   "description": "Mobile development tool",
-  "productName": "Flipper",
+  "productName": "Klipper",
   "author": "Facebook Inc",
   "main": "src/index.tsx",
   "icon": "icon.png",

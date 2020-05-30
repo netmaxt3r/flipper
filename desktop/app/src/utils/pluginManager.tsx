@@ -26,7 +26,7 @@ const getTmpDir = promisify(tmp.dir) as () => Promise<string>;
 const ALGOLIA_APPLICATION_ID = 'OFCNCOG2CU';
 const ALGOLIA_API_KEY = 'f54e21fa3a2a0160595bb058179bfb1e';
 
-export const PLUGIN_DIR = path.join(homedir(), '.flipper', 'thirdparty');
+export const PLUGIN_DIR = path.join(homedir(), '.klipper', 'thirdparty');
 
 function providePluginManager(): PM {
   return new PM({

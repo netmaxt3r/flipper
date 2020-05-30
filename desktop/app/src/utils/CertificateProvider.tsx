@@ -603,5 +603,5 @@ export default class CertificateProvider {
 }
 
 function getFilePath(fileName: string): string {
-  return path.resolve(os.homedir(), '.flipper', 'certs', fileName);
+  return path.resolve(os.homedir(), '.klipper', 'certs', fileName);
 }

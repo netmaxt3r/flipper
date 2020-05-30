@@ -41,7 +41,7 @@ export default class VideoRecordingButton extends Component<Props, State> {
       return;
     }
 
-    const flipperDirectory = path.join(os.homedir(), '.flipper');
+    const flipperDirectory = path.join(os.homedir(), '.klipper');
     const fileName = `screencap-${new Date()
       .toISOString()
       .replace(/:/g, '')}.mp4`;
