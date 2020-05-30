@@ -178,6 +178,7 @@ export default class CertificateProvider {
         CAkey: caKey,
         CAcreateserial: true,
         CAserial: serverSrl,
+        days: 6500,
       });
     });
   }
@@ -546,6 +547,7 @@ export default class CertificateProvider {
           subj: caSubject,
           key: caKey,
           out: caCert,
+          days: 6500,
         }),
       )
       .then((_) => undefined);
@@ -590,6 +592,7 @@ export default class CertificateProvider {
           CAcreateserial: true,
           CAserial: serverSrl,
           out: serverCert,
+          days: 6500,
         }),
       )
       .then((_) => undefined);
